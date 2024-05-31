@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+         <h1 th:text="${msg}"></h1>
+	<form th:action="@{/saveUser}" th:object="${user}" method="Post">
+
+		<table>
+			<tr>
+				<td>User Name:</td>
+				<td><input type="text" th:field="*{userName}" /></td>
+			</tr>
+			<tr>
+				<td>User Mail:</td>
+				<td><input type="text" th:field="*{userMail}" /></td>
+			</tr>
+			<tr>
+				<td>User Mobile Number:</td>
+				<td><input type="text" th:field="*{userMobileNum}" /></td>
+
+			</tr>
+			<tr>
+				<td>User Password:</td>
+				<td><input type="text" th:field="*{userPassword}" /></td>
+			</tr> 
+			
+			<tr>
+				<td></td>
+				<td><input type="submit" value="SUBMIT"></td>
+			</tr>
+
+
+		</table>
+</form>
+
+</body>
+</html>
