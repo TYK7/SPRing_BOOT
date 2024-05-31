@@ -1,0 +1,27 @@
+{"properties": [
+  {
+    "name": "app.messages.welcome",
+    "type": "java.lang.String",
+    "description": "A description for 'app.messages.welcome'"
+  },
+  {
+    "name": "app.messages.greet",
+    "type": "java.lang.String",
+    "description": "A description for 'app.messages.greet'"
+  },
+  {
+    "name": "app.messages.wish",
+    "type": "java.lang.String",
+    "description": "A description for 'app.messages.wish'"
+  },
+  {
+    "name": "app.messages.asking",
+    "type": "java.lang.String",
+    "description": "A description for 'app.messages.asking'"
+  },
+  {
+    "name": "message",
+    "type": "java.lang.String",
+    "description": "A description for 'message'"
+  }
+]}

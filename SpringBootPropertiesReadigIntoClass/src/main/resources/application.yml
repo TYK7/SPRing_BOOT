@@ -1,0 +1,16 @@
+server:
+  port: 9090
+  
+message: Hi How Are Guys
+
+spring:
+  application:
+    name: My New Project
+    
+project:
+  messages:
+   welcome: Welcome To The My Project
+   greet: Good Morning Guys
+   wish: All the Best For Interview
+   asking: How Are You Guys
+  
