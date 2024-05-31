@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<ul>
+		<h1 style="text-align: center;">SEVEN CRICKET ACADEMY</h1>
+	</ul>
+	<div style="margin-left: 400px;margin-bottom: 70px;">
+		<form th:action="@{/player}" th:object="${player}" method="Post">
+
+			<table>
+				<tr>
+					<td>Player Full Name:</td>
+					<td><input type="text" th:field="*{playerFullName}" /></td>
+				</tr>
+				<tr>
+					<td>Player Father Name:</td>
+					<td><input type="text" th:field="*{playerFatherName}" /></td>
+				</tr>
+				<tr>
+					<td>Player PhoneNumber:</td>
+					<td><input th:field="*{playerPhoneNum}" /></td>
+
+				</tr>
+				<tr>
+					<td>Player Height:</td>
+					<td><input type="text" th:field="*{playerHeight}" /></td>
+				</tr>
+				<tr>
+					<td>PlayerRole:</td>
+					<td><select th:field="*{playerRole}">
+							<option value="">---Select--</option>
+							<option value="AllRounder">AllRounder</option>
+							<option value="BatsMen">BatsMen</option>
+							<option value="Bowler">Bowler</option>
+					</select></td>
+
+				</tr>
+				<tr>
+					<td>Player Batting:</td>
+					<td><select th:field="*{playerBatting}">
+							<option value="">---Select--</option>
+							<option value="LeftHander">LeftHander</option>
+							<option value="RightHander">RightHander</option>
+
+					</select></td>
+
+				</tr>
+				<tr>
+					<td>Player Bowling:</td>
+					<td><select th:field="*{playerBowling}">
+							<option value="">---Select--</option>
+							<option value="LeftHander">LeftHander</option>
+							<option value="RightHander">RightHander</option>
+
+					</select></td>
+
+				</tr>
+				<tr>
+					<td>Player Date Of Birth:</td>
+					<td><input type="date" th:field="*{playerDateOfBirth}" /></td>
+
+				</tr>
+				<tr>
+					<td>Player Address:</td>
+					<td><textarea th:field="*{playerAddress}"></textarea></td>
+
+				</tr>
+				<tr>
+					<td>Player TshirtNo:</td>
+					<td><input th:field="*{playerTshirtNo}" /></td>
+
+				</tr>
+				<tr>
+					<td>Player Email:</td>
+					<td><input type="email" th:field="*{playerEmail}" /></td>
+
+				</tr>
+				<tr>
+					<td>Player Password:</td>
+					<td><input type="password" th:field="*{playerPassword}" /></td>
+
+				</tr>
+
+				<tr>
+					<td></td>
+					<td><input type="submit" value="SUBMIT"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td th:text="${msg} ?: ' '" />
+
+					<!-- <td>
+    <span th:if="${msg == null}"></span>
+    <p th:unless="${msg}"/>]
+</td> -->
+				</tr>
+			</table>
+
+
+		</form>
+	</div>
+
+</body>
+</html>
